@@ -1,0 +1,14 @@
+<html>
+
+    <h1>hello</h1>
+
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const product = urlParams.get('xss')
+
+        document.querySelector('h1').innerHTML = product
+
+    </script>
+
+</html>
